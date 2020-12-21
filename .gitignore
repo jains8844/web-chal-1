@@ -1,0 +1,12 @@
+.env
+database.db
+payload
+exclude.txt
+__pycache__
+comments/__pycache__
+py38
+.vscode
+redis.log
+redis-error.log
+error.log
+access.log

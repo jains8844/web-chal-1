@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% autoescape false %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Super Secure Site</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header>
+      <h1>Super Secure Site</h1>
+    </header>
+    <!-- Write form -->
+    <form action="/add" method="POST">
+      <input type="text" name="comment" 
+             placeholder="Comment" autocomplete="off" />       
+      <input type="submit" value="Submit new comment" />
+    </form>
+    <form action="/url" method="POST">
+      <input type="text" name="url" 
+             placeholder="Enter url to be visited by admin" autocomplete="off" />       
+      <input type="submit" value="Submit" />
+    </form>
+
+  </body>
+</html>
+{% endautoescape %}
