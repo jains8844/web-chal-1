@@ -7,9 +7,7 @@ import json
 
 async def main(url, environ):
     environ = json.loads(environ)
-    browser = await launch(headless=True,
-                           executablePath="/usr/bin/chromium",
-                           args=['--no-sandbox', '--disable-gpu'])
+    browser = await launch(headless=True, args=['--no-sandbox', '--disable-gpu'])
     try:
         page = await browser.newPage()
         cookies = [
